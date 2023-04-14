@@ -1,0 +1,76 @@
+<div class="navHome">
+  <h1 class="tituloHome">Lista de productos</h1>
+  <div class="btnNav">
+    <button class="btnCarrito" id="logout">Logout</button>
+  </div>
+</div>
+
+<h3>Hola {{firstName}} {{lastName}} {{admin}}</h3>
+
+<div class="containerProductos">
+
+  <div class="containerCard">
+    <div class="containerCard cardAdmin" id="containerCards"></div>
+    
+      <div class="containerBtn">
+        <button id="btnAnterior">PAGINA ANTERIOR</button>
+        <h5 style="color: white">Pagina <span  id="pag"></span></h5>
+        <button id="btnSiguiente">PAGINA SIGUIENTE</button>
+      </div>
+  </div>
+
+  <div class="formProductos">
+    <h3 class="tituloForm">Agregar productos</h3>
+    <form action="" id="form">
+      <div class="mb-1">
+        <label>Nombre Producto</label>
+        <input
+          class="col-12"
+          type="text"
+          placeholder="nombre producto"
+          id="nombre"
+          
+        />
+      </div>
+      <div class="mb-1">
+        <label>Descripcion</label>
+        <input
+          class="col-12"
+          type="text"
+          placeholder="descripcion"
+          id="descripcion"
+        />
+      </div>
+      <div class="mb-1">
+        <label>Precio</label>
+        <input class="col-12" type="number" placeholder="precio" id="precio" />
+      </div>
+      <div class="mb-1">
+        <label>Categoria</label>
+        <input
+          class="col-11"
+          type="text"
+          placeholder="categoria"
+          id="categoria"
+        />
+      </div>
+      <div class="mb-1">
+        <label>Codigo</label>
+        <input class="col-12" type="text" placeholder="codigo" id="codigo" />
+      </div>
+      <button id="btnAdd" class="btn btn-success">Agregar Producto</button>
+
+      <h3 class="tituloForm mt-3">Eliminar Producto</h3>
+      <div class="mb-1">
+        <label>Codigo</label>
+        <input
+          class="col-12"
+          type="text"
+          placeholder="codigo"
+          id="codigoEliminar"
+        />
+      </div>
+      <button id="btnEliminar" class="btn btn-danger">Eliminar Producto</button>
+    </form>
+  </div>
+</div>
